@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Language Champion · Teaser</title>
+<!-- Generated from motion/teaser.template.html by motion/render.js. Edit the template, not teaser.html. -->
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root {
+    --navy: #22335A; --ink: #1C2541; --orange: #D9772B; --burnt: #A4511A;
+    --lsand: #F4EEE5; --sand: #E5D7C1; --slate: #4A5F86; --muted: #5B6478;
+    --taupe: #C9B79C; --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; background: #111a2e; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #stage { position: relative; flex: none; width: 1920px; height: 1080px; overflow: hidden; background: var(--navy);
+           font-family: 'Arimo', Arial, sans-serif; color: var(--ink); transform-origin: center center; }
+  .scene { position: absolute; inset: 0; display: none; overflow: hidden; }
+  .pin { position: absolute; width: 0; height: 0; will-change: transform, opacity; }
+  .c, .l, .r { position: absolute; left: 0; top: 0; white-space: nowrap; }
+  .c { transform: translate(-50%, -50%); text-align: center; }
+  .l { transform: translate(0, -50%); }
+  .r { transform: translate(-100%, -50%); text-align: right; }
+  .serif { font-family: 'Gelasio', Georgia, serif; font-weight: 400; font-variant-numeric: lining-nums; font-feature-settings: 'lnum' 1; }
+  .ital { font-style: italic; }
+  .ar { font-family: 'Noto Sans Arabic', Arial, sans-serif; font-weight: 600; direction: rtl; line-height: 1.35; }
+  .eyebrow { font-weight: 700; text-transform: uppercase; }
+  .disc { border-radius: 50%; }
+  .bubble { display: flex; align-items: center; justify-content: center; padding: 18px 54px;
+            box-shadow: 0 18px 40px rgba(10, 16, 34, 0.30); line-height: 1.25; }
+  .bubble.sm { padding: 12px 36px; box-shadow: 0 12px 28px rgba(28, 37, 65, 0.16); }
+  .mask { display: inline-block; overflow: hidden; padding: 0 4px 18px; margin-bottom: -18px; }
+  .mask > span { display: inline-block; will-change: transform; }
+  .card { width: 300px; height: 330px; background: var(--white); border-radius: 28px;
+          box-shadow: 0 22px 50px rgba(28, 37, 65, 0.12);
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+  .icon { display: inline-flex; align-items: center; justify-content: center; }
+  .icon svg { width: 1em; height: 1em; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- ===================== S1 · Can you guess the language? ===================== -->
+  <section class="scene" id="s1" style="background: var(--navy);">
+    <div class="pin" id="s1-bg" style="left: 960px; top: 540px;">
+      <div class="c disc" style="width: 940px; height: 940px; background: var(--slate); opacity: 0.4;"></div>
+    </div>
+
+    <div class="pin" id="b1" style="left: 430px; top: 300px;"><div class="c bubble" style="background: var(--white); border-radius: 56px 56px 56px 12px;"><span class="ar" style="font-size: 76px; color: var(--ink);">مرحبا</span></div></div>
+    <div class="pin" id="b2" style="left: 1490px; top: 270px;"><div class="c bubble serif" style="background: var(--orange); border-radius: 56px 56px 12px 56px; font-size: 84px; color: var(--ink);">Merhaba</div></div>
+    <div class="pin" id="b3" style="left: 960px; top: 190px;"><div class="c bubble serif" style="background: var(--sand); border-radius: 56px 56px 56px 12px; font-size: 84px; color: var(--ink);">Hola</div></div>
+    <div class="pin" id="b4" style="left: 400px; top: 800px;"><div class="c bubble serif" style="background: var(--orange); border-radius: 56px 56px 56px 12px; font-size: 84px; color: var(--ink);">Bonjour</div></div>
+    <div class="pin" id="b5" style="left: 1500px; top: 810px;"><div class="c bubble" style="background: var(--white); border-radius: 56px 56px 12px 56px;"><span class="ar" style="font-size: 76px; color: var(--ink);">خوش آمدید</span></div></div>
+
+    <div class="pin" id="lb1" style="left: 430px; top: 410px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 8px; color: var(--sand);">Arabic</div></div>
+    <div class="pin" id="lb2" style="left: 1490px; top: 380px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 8px; color: var(--sand);">Turkish</div></div>
+    <div class="pin" id="lb3" style="left: 960px; top: 300px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 8px; color: var(--sand);">Spanish</div></div>
+    <div class="pin" id="lb4" style="left: 400px; top: 910px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 8px; color: var(--sand);">French</div></div>
+    <div class="pin" id="lb5" style="left: 1500px; top: 920px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 8px; color: var(--sand);">Urdu</div></div>
+
+    <div class="pin" id="s1-q" style="left: 960px; top: 545px;"><div class="c serif ital" style="font-size: 92px; color: var(--white);">Can you guess the language?</div></div>
+  </section>
+
+  <!-- ===================== S2 · 31+ nationalities ===================== -->
+  <section class="scene" id="s2" style="background: var(--lsand);">
+    <div class="pin" id="s2-num" style="left: 960px; top: 360px;">
+      <div class="c serif" style="font-size: 320px; line-height: 1; color: var(--orange);"><span id="n31">0</span><span id="n31p">+</span></div>
+    </div>
+    <div class="pin" id="s2-lbl" style="left: 960px; top: 590px;"><div class="c eyebrow" style="font-size: 30px; letter-spacing: 10px; color: var(--navy);">Nationalities work side by side at AMP-2</div></div>
+    <div class="pin" id="s2-sub" style="left: 960px; top: 690px;"><div class="c serif" style="font-size: 78px; color: var(--navy);">One team. Many voices.</div></div>
+    <div id="s2-dots"></div>
+  </section>
+
+  <!-- ===================== S3 · Title reveal ===================== -->
+  <section class="scene" id="s3" style="background: var(--navy);">
+    <div class="pin" id="s3-bg" style="left: 1660px; top: 900px;"><div class="c disc" style="width: 900px; height: 900px; background: var(--slate); opacity: 0.35;"></div></div>
+    <div class="pin" id="s3-bg2" style="left: 180px; top: 120px;"><div class="c disc" style="width: 420px; height: 420px; background: var(--slate); opacity: 0.22;"></div></div>
+    <div class="pin" id="s3-logo" style="left: 960px; top: 170px;"><img class="c" src="../assets/lucid-white.png" alt="Lucid" style="width: 250px;"></div>
+    <div class="pin" id="s3-eye" style="left: 960px; top: 350px;"><div class="c eyebrow" style="font-size: 28px; letter-spacing: 14px; color: var(--sand);">Introducing</div></div>
+    <div class="pin" style="left: 960px; top: 485px;">
+      <div class="c serif" style="font-size: 170px; line-height: 1.1; color: var(--white); display: flex; gap: 44px;">
+        <span class="mask"><span id="w1">Language</span></span><span class="mask"><span id="w2">Champion</span></span>
+      </div>
+    </div>
+    <div class="pin" style="left: 960px; top: 665px;">
+      <div class="c serif ital" style="font-size: 68px; color: var(--orange); display: flex; gap: 38px;">
+        <span id="tg1">Learn.</span><span id="tg2">Connect.</span><span id="tg3">Belong.</span>
+      </div>
+    </div>
+    <div class="pin" id="s3-foot" style="left: 960px; top: 965px;"><div class="c eyebrow" style="font-size: 22px; letter-spacing: 7px; color: var(--sand);">AMP-2 Lucid KSA &nbsp;·&nbsp; Learning &amp; Development</div></div>
+  </section>
+
+  <!-- ===================== S4 · Five languages ===================== -->
+  <section class="scene" id="s4" style="background: var(--lsand);">
+    <div class="pin" id="s4-eye" style="left: 960px; top: 165px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 9px; color: var(--burnt);">The focus</div></div>
+    <div class="pin" id="s4-h" style="left: 960px; top: 255px;"><div class="c serif" style="font-size: 84px; color: var(--navy);">Five languages. One conversation.</div></div>
+    <div class="pin" id="c1" style="left: 280px; top: 590px;"><div class="c card"><span class="ar" style="font-size: 56px; color: var(--navy);">مرحبا</span><span class="eyebrow" style="font-size: 24px; letter-spacing: 6px; color: var(--burnt);">Arabic</span><span style="font-size: 26px; color: var(--muted);">hello</span></div></div>
+    <div class="pin" id="c2" style="left: 620px; top: 590px;"><div class="c card"><span class="serif" style="font-size: 58px; color: var(--navy);">Merhaba</span><span class="eyebrow" style="font-size: 24px; letter-spacing: 6px; color: var(--burnt);">Turkish</span><span style="font-size: 26px; color: var(--muted);">hello</span></div></div>
+    <div class="pin" id="c3" style="left: 960px; top: 590px;"><div class="c card"><span class="serif" style="font-size: 58px; color: var(--navy);">Bonjour</span><span class="eyebrow" style="font-size: 24px; letter-spacing: 6px; color: var(--burnt);">French</span><span style="font-size: 26px; color: var(--muted);">good day</span></div></div>
+    <div class="pin" id="c4" style="left: 1300px; top: 590px;"><div class="c card"><span class="ar" style="font-size: 48px; color: var(--navy);">خوش آمدید</span><span class="eyebrow" style="font-size: 24px; letter-spacing: 6px; color: var(--burnt);">Urdu</span><span style="font-size: 26px; color: var(--muted);">welcome</span></div></div>
+    <div class="pin" id="c5" style="left: 1640px; top: 590px;"><div class="c card"><span class="serif" style="font-size: 58px; color: var(--navy);">Hola</span><span class="eyebrow" style="font-size: 24px; letter-spacing: 6px; color: var(--burnt);">Spanish</span><span style="font-size: 26px; color: var(--muted);">hi</span></div></div>
+    <div class="pin" id="s4-cap" style="left: 960px; top: 885px;"><div class="c" style="font-size: 34px; color: var(--muted);">Each learner chooses one language for the full program</div></div>
+  </section>
+
+  <!-- ===================== S5 · How it works ===================== -->
+  <section class="scene" id="s5" style="background: var(--white);">
+    <div class="pin" id="s5-eye" style="left: 960px; top: 150px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 9px; color: var(--burnt);">The program</div></div>
+    <div class="pin" id="st1" style="left: 480px; top: 330px;"><div class="c serif" style="font-size: 210px; line-height: 1; color: var(--orange);" id="n100">0</div></div>
+    <div class="pin" id="st2" style="left: 960px; top: 330px;"><div class="c serif" style="font-size: 210px; line-height: 1; color: var(--orange);" id="n10">0</div></div>
+    <div class="pin" id="st3" style="left: 1440px; top: 330px;"><div class="c serif" style="font-size: 210px; line-height: 1; color: var(--orange);" id="n2">0</div></div>
+    <div class="pin" id="sl1" style="left: 480px; top: 475px;"><div class="c eyebrow" style="font-size: 28px; letter-spacing: 8px; color: var(--navy);">Words per learner</div></div>
+    <div class="pin" id="sl2" style="left: 960px; top: 475px;"><div class="c eyebrow" style="font-size: 28px; letter-spacing: 8px; color: var(--navy);">Sessions</div></div>
+    <div class="pin" id="sl3" style="left: 1440px; top: 475px;"><div class="c eyebrow" style="font-size: 28px; letter-spacing: 8px; color: var(--navy);">Months · Nov–Dec</div></div>
+    <div class="pin" id="s5-line" style="left: 200px; top: 700px;"><div style="position: absolute; left: 0; top: -2px; width: 1520px; height: 4px; background: var(--navy); border-radius: 2px;"></div></div>
+    <div id="s5-road"></div>
+    <div class="pin" id="s5-cap" style="left: 960px; top: 885px;"><div class="c" style="font-size: 32px; color: var(--muted);">A Language Passport checkpoint every two sessions</div></div>
+  </section>
+
+  <!-- ===================== S6 · The call ===================== -->
+  <section class="scene" id="s6" style="background: var(--navy);">
+    <div class="pin" id="s6-bg1" style="left: 230px; top: 960px;"><div class="c disc" style="width: 640px; height: 640px; background: var(--slate); opacity: 0.35;"></div></div>
+    <div class="pin" id="s6-bg2" style="left: 1760px; top: 110px;"><div class="c disc" style="width: 440px; height: 440px; background: var(--slate); opacity: 0.25;"></div></div>
+    <div class="pin" id="s6-eye" style="left: 960px; top: 180px;"><div class="c eyebrow" style="font-size: 26px; letter-spacing: 12px; color: var(--sand);">Now recruiting</div></div>
+    <div class="pin" id="s6-a" style="left: 960px; top: 265px;"><div class="c serif ital" style="font-size: 62px; color: var(--sand);">We're looking for</div></div>
+    <div class="pin" id="s6-b" style="left: 960px; top: 400px;"><div class="c serif" style="font-size: 132px; color: var(--white);"><span style="color: var(--orange);">10</span> Language Champions</div></div>
+    <div class="pin" id="s6-c" style="left: 960px; top: 545px;"><div class="c" style="font-size: 42px; color: var(--white);">Fluent in Arabic, Turkish, French, Urdu or Spanish?</div></div>
+    <div class="pin" id="s6-d" style="left: 960px; top: 610px;"><div class="c" style="font-size: 34px; color: var(--sand);">Teach your colleagues. No teaching experience needed.</div></div>
+
+    <div class="pin" id="ch1" style="left: 560px; top: 790px;"><div class="c disc icon" style="width: 112px; height: 112px; background: var(--orange); color: var(--white); font-size: 54px;">{{ICON:FaGraduationCap}}</div></div>
+    <div class="pin" id="ch2" style="left: 960px; top: 790px;"><div class="c disc icon" style="width: 112px; height: 112px; background: var(--orange); color: var(--white); font-size: 54px;">{{ICON:FaAward}}</div></div>
+    <div class="pin" id="ch3" style="left: 1360px; top: 790px;"><div class="c disc icon" style="width: 112px; height: 112px; background: var(--orange); color: var(--white); font-size: 54px;">{{ICON:FaNetworkWired}}</div></div>
+    <div class="pin" id="ct1" style="left: 560px; top: 900px;"><div class="c" style="font-size: 34px; font-weight: 700; color: var(--white);">Skills</div><div class="c" style="top: 48px; font-size: 26px; color: var(--sand);">Facilitation training</div></div>
+    <div class="pin" id="ct2" style="left: 960px; top: 900px;"><div class="c" style="font-size: 34px; font-weight: 700; color: var(--white);">Recognition</div><div class="c" style="top: 48px; font-size: 26px; color: var(--sand);">Pin and certificate</div></div>
+    <div class="pin" id="ct3" style="left: 1360px; top: 900px;"><div class="c" style="font-size: 34px; font-weight: 700; color: var(--white);">Network</div><div class="c" style="top: 48px; font-size: 26px; color: var(--sand);">Across every shop</div></div>
+  </section>
+
+  <!-- ===================== S7 · Apply ===================== -->
+  <section class="scene" id="s7" style="background: var(--lsand);">
+{{S7_RIGHT}}
+    <div class="pin" id="s7-eye" style="left: 160px; top: 245px;"><div class="l eyebrow" style="font-size: 28px; letter-spacing: 10px; color: var(--burnt);">Apply now</div></div>
+    <div class="pin" id="s7-a" style="left: 160px; top: 360px;"><div class="l serif" style="font-size: 156px; line-height: 1.05; color: var(--navy);">Step up.</div></div>
+    <div class="pin" id="s7-b" style="left: 160px; top: 495px;"><div class="l serif ital" style="font-size: 74px; color: var(--burnt);">Your language matters.</div></div>
+    <div class="pin" id="s7-pill" style="left: 160px; top: 640px;">
+      <div class="l" style="display: flex; align-items: center; gap: 20px; background: var(--navy); border-radius: 60px; padding: 22px 40px 22px 30px;">
+        <span class="icon" style="font-size: 36px; color: var(--orange);">{{ICON:FaClock}}</span>
+        <span style="font-size: 32px; color: var(--white);">{{DEADLINE}}</span>
+      </div>
+    </div>
+    <div class="pin" id="s7-link" style="left: 160px; top: 755px;">
+      <div class="l" style="display: flex; align-items: center; gap: 20px;">
+        <span class="icon" style="font-size: 36px; color: var(--burnt);">{{ICON:FaEnvelopeOpenText}}</span>
+        <span style="font-size: 36px; color: var(--ink);">{{APPLY_LINE}}</span>
+      </div>
+    </div>
+    <div class="pin" id="s7-logo" style="left: 160px; top: 965px;"><img class="l" src="../assets/lucid-navy.png" alt="Lucid" style="width: 210px;"></div>
+    <div class="pin" id="s7-tag" style="left: 1760px; top: 965px;"><div class="r eyebrow" style="font-size: 24px; letter-spacing: 9px; color: var(--burnt);">Learn. &nbsp;Connect. &nbsp;Belong.</div></div>
+  </section>
+
+  <div id="endfade" style="position: absolute; inset: 0; background: var(--navy); opacity: 0; pointer-events: none;"></div>
+</div>
+
+<script>
+(() => {
+  const DURATION = 33;      // seconds; the last 0.6 s fades to navy so the loop joins scene 1 cleanly
+  const REV = 0.75;         // circular reveal between scenes
+  const W = 1920, H = 1080;
+  const SCENES = [
+    { id: 's1', start: 0,    origin: [960, 540] },
+    { id: 's2', start: 5.0,  origin: [960, 545] },
+    { id: 's3', start: 9.0,  origin: [960, 360] },
+    { id: 's4', start: 13.5, origin: [0, 1080] },
+    { id: 's5', start: 18.0, origin: [1920, 540] },
+    { id: 's6', start: 22.5, origin: [960, 540] },
+    { id: 's7', start: 27.5, origin: [1460, 520] },
+  ];
+  const COLORS = { navy: '#22335A', orange: '#D9772B', slate: '#4A5F86', taupe: '#C9B79C', burnt: '#A4511A' };
+
+  const E = {
+    linear: p => p,
+    outQuad: p => 1 - (1 - p) * (1 - p),
+    outCubic: p => 1 - Math.pow(1 - p, 3),
+    inOutCubic: p => p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2,
+    outExpo: p => p >= 1 ? 1 : 1 - Math.pow(2, -10 * p),
+    outBack: p => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(p - 1, 3) + c1 * Math.pow(p - 1, 2); },
+  };
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const $ = id => document.getElementById(id);
+
+  // ---------- generated elements: scene 2 dots and scene 5 roadmap
+  const DOTS = 31, DOT_T0 = 5.5, DOT_DUR = 1.5;
+  const dotTimes = [];
+  {
+    const host = $('s2-dots'), cycle = [COLORS.navy, COLORS.orange, COLORS.slate, COLORS.taupe, COLORS.burnt];
+    for (let i = 0; i < DOTS; i++) {
+      const d = document.createElement('div');
+      d.className = 'pin'; d.id = 'dot' + i;
+      d.style.left = (960 + (i - 15) * 52) + 'px'; d.style.top = '880px';
+      d.innerHTML = `<div class="c disc" style="width:30px;height:30px;background:${cycle[i % 5]}"></div>`;
+      host.appendChild(d);
+      dotTimes.push(DOT_T0 + DOT_DUR * (1 - Math.sqrt(1 - (i + 1) / DOTS))); // matches an ease-out count
+    }
+    const road = $('s5-road');
+    const cats = ['Greetings', 'Numbers', 'Time', 'Requests', 'Directions', 'Workplace', 'Feelings', 'Questions', 'Culture', 'Bonus'];
+    cats.forEach((c, i) => {
+      const x = 200 + i * (1520 / 9), even = (i + 1) % 2 === 0;
+      road.insertAdjacentHTML('beforeend',
+        `<div class="pin" id="rd${i}" style="left:${x}px;top:700px"><div class="c disc" style="width:54px;height:54px;line-height:54px;background:${even ? COLORS.orange : COLORS.navy};color:#fff;font-weight:700;font-size:22px">${i + 1}</div></div>` +
+        `<div class="pin" id="rl${i}" style="left:${x}px;top:765px"><div class="c" style="font-size:24px;font-weight:700;color:${COLORS.navy}">${c}</div></div>`);
+    });
+  }
+
+  // ---------- keyframe tracks
+  const tracks = [], fx = [];
+  const DEF = { o: 1, x: 0, y: 0, s: 1, r: 0, sx: 1 };
+  function K(id, frames, opt = {}) {
+    const el = $(id);
+    if (!el) throw new Error('Missing element #' + id);
+    let prev = { ...DEF };
+    const fr = frames.map(([t, v, e]) => { prev = { ...prev, ...v }; return { t, v: prev, e: e || 'outCubic' }; });
+    tracks.push({ el, fr, opt });
+  }
+  const rise = (id, t, d = 40, dur = 0.8, opt) => K(id, [[t, { o: 0, y: d }], [t + dur, { o: 1, y: 0 }]], opt);
+  const fade = (id, t, dur = 0.6) => K(id, [[t, { o: 0 }], [t + dur, { o: 1 }, 'linear']]);
+  const pop = (id, t, dur = 0.6, from = 0.3, opt) => K(id, [[t, { o: 0, s: from }], [t + dur, { o: 1, s: 1 }, 'outBack']], opt);
+  const drift = (id, t0, t1, from, to) => K(id, [[t0, from], [t1, to, 'linear']]);
+
+  function sample(fr, t) {
+    if (t <= fr[0].t) return fr[0].v;
+    for (let i = 1; i < fr.length; i++) {
+      if (t < fr[i].t) {
+        const a = fr[i - 1], b = fr[i], p = E[b.e]((t - a.t) / (b.t - a.t)), o = {};
+        for (const k in b.v) o[k] = a.v[k] + (b.v[k] - a.v[k]) * p;
+        return o;
+      }
+    }
+    return fr[fr.length - 1].v;
+  }
+  function apply(tr, t) {
+    const v = sample(tr.fr, t);
+    let y = v.y;
+    if (tr.opt.float) { const [amp, period, phase] = tr.opt.float; y += amp * Math.sin((2 * Math.PI * t) / period + phase); }
+    tr.el.style.opacity = clamp(v.o, 0, 1);
+    tr.el.style.transform = `translate(${v.x}px, ${y}px) rotate(${v.r}deg) scale(${v.s * v.sx}, ${v.s})`;
+  }
+
+  // ---------- S1 · guess the language (0–5 s)
+  drift('s1-bg', 0, 5.75, { s: 0.86 }, { s: 1.06 });
+  [['b1', 0.25], ['b2', 0.65], ['b3', 1.05], ['b4', 1.45], ['b5', 1.85]].forEach(([id, t], i) => pop(id, t, 0.65, 0.3, { float: [9, 3.2 + i * 0.35, i * 1.3] }));
+  rise('s1-q', 2.45, 50, 0.9);
+  ['lb1', 'lb2', 'lb3', 'lb4', 'lb5'].forEach((id, i) => rise(id, 3.45 + i * 0.12, 18, 0.55));
+
+  // ---------- S2 · 31+ nationalities (5–9 s)
+  K('s2-num', [[5.35, { o: 0, s: 0.9 }], [6.0, { o: 1, s: 1 }]]);
+  fx.push(t => {
+    let n = 0; for (const dt of dotTimes) if (t >= dt) n++;
+    $('n31').textContent = n;
+    $('n31p').style.opacity = clamp((t - (DOT_T0 + DOT_DUR)) / 0.3, 0, 1);
+  });
+  dotTimes.forEach((dt, i) => pop('dot' + i, dt, 0.45, 0.2));
+  rise('s2-lbl', 6.3, 24, 0.7);
+  rise('s2-sub', 6.75, 36, 0.8);
+
+  // ---------- S3 · title (9–13.5 s)
+  drift('s3-bg', 9.0, 14.25, { x: 0, s: 0.95 }, { x: -50, s: 1.04 });
+  drift('s3-bg2', 9.0, 14.25, { y: 0 }, { y: 30 });
+  fade('s3-logo', 9.6, 0.7);
+  K('s3-eye', [[9.75, { o: 0, y: 14 }], [10.4, { o: 1, y: 0 }]]);
+  K('w1', [[10.0, { y: 210 }], [10.95, { y: 0 }, 'outExpo']]);
+  K('w2', [[10.22, { y: 210 }], [11.17, { y: 0 }, 'outExpo']]);
+  ['tg1', 'tg2', 'tg3'].forEach((id, i) => rise(id, 11.15 + i * 0.35, 26, 0.6));
+  fade('s3-foot', 12.3, 0.7);
+
+  // ---------- S4 · five languages (13.5–18 s)
+  rise('s4-eye', 14.0, 16, 0.6);
+  rise('s4-h', 14.1, 34, 0.8);
+  ['c1', 'c2', 'c3', 'c4', 'c5'].forEach((id, i) => K(id, [[14.55 + i * 0.14, { o: 0, y: 90 }], [15.4 + i * 0.14, { o: 1, y: 0 }]], { float: [5, 4 + i * 0.3, i] }));
+  fade('s4-cap', 16.2, 0.7);
+
+  // ---------- S5 · how it works (18–22.5 s)
+  rise('s5-eye', 18.55, 16, 0.6);
+  [['st1', 'sl1', 18.65], ['st2', 'sl2', 18.8], ['st3', 'sl3', 18.95]].forEach(([n, l, t]) => { rise(n, t, 40, 0.7); rise(l, t + 0.15, 18, 0.6); });
+  const counter = (id, to, t0, t1) => fx.push(t => { $(id).textContent = Math.round(to * E.outCubic(clamp((t - t0) / (t1 - t0), 0, 1))); });
+  counter('n100', 100, 18.7, 19.9); counter('n10', 10, 18.85, 19.9); counter('n2', 2, 19.0, 19.9);
+  K('s5-line', [[20.0, { sx: 0 }], [20.95, { sx: 1 }, 'inOutCubic']]);
+  for (let i = 0; i < 10; i++) { pop('rd' + i, 20.1 + i * 0.085, 0.45, 0.2); rise('rl' + i, 20.2 + i * 0.085, 12, 0.45); }
+  fade('s5-cap', 21.3, 0.6);
+
+  // ---------- S6 · the call (22.5–27.5 s)
+  drift('s6-bg1', 22.5, 28.25, { s: 0.9 }, { s: 1.05 });
+  drift('s6-bg2', 22.5, 28.25, { s: 1.05 }, { s: 0.92 });
+  rise('s6-eye', 23.0, 16, 0.6);
+  rise('s6-a', 23.15, 28, 0.7);
+  K('s6-b', [[23.45, { o: 0, y: 40, s: 0.94 }], [24.3, { o: 1, y: 0, s: 1 }]]);
+  rise('s6-c', 24.1, 24, 0.7);
+  rise('s6-d', 24.4, 24, 0.7);
+  [['ch1', 'ct1'], ['ch2', 'ct2'], ['ch3', 'ct3']].forEach(([c, l], i) => { pop(c, 25.0 + i * 0.3, 0.65, 0.2); rise(l, 25.15 + i * 0.3, 18, 0.6); });
+
+  // ---------- S7 · apply (27.5–33 s)
+  rise('s7-eye', 28.0, 16, 0.6);
+  rise('s7-a', 28.1, 46, 0.85);
+  rise('s7-b', 28.4, 30, 0.75);
+  K('s7-pill', [[28.95, { o: 0, x: -30 }], [29.65, { o: 1, x: 0 }]]);
+  K('s7-link', [[29.25, { o: 0, x: -30 }], [29.95, { o: 1, x: 0 }]]);
+  fade('s7-logo', 29.8, 0.7);
+  fade('s7-tag', 30.0, 0.7);
+  if ($('s7-qr')) {
+    K('s7-qr', [[28.5, { o: 0, s: 0.86 }], [29.3, { o: 1, s: 1 }, 'outBack']]);
+  } else {
+    drift('s7-disc', 27.5, 33, { s: 0.92 }, { s: 1.04 });
+    ['r1', 'r2', 'r3', 'r4', 'r5'].forEach((id, i) => pop(id, 28.55 + i * 0.16, 0.6, 0.3, { float: [7, 3 + i * 0.4, i * 1.1] }));
+  }
+
+  // ---------- frame renderer
+  const maxR = ([cx, cy]) => Math.max(...[[0, 0], [W, 0], [0, H], [W, H]].map(([x, y]) => Math.hypot(x - cx, y - cy))) + 4;
+  function renderFrame(t) {
+    SCENES.forEach((sc, i) => {
+      const el = $(sc.id), next = SCENES[i + 1];
+      const end = next ? next.start + REV : DURATION + 1;
+      const visible = t >= sc.start && t < end;
+      el.style.display = visible ? 'block' : 'none';
+      if (!visible) return;
+      if (sc.start > 0 && t < sc.start + REV) {
+        const r = E.inOutCubic((t - sc.start) / REV) * maxR(sc.origin);
+        el.style.clipPath = `circle(${r}px at ${sc.origin[0]}px ${sc.origin[1]}px)`;
+      } else {
+        el.style.clipPath = 'none';
+      }
+    });
+    for (const tr of tracks) apply(tr, t);
+    for (const f of fx) f(t);
+    $('endfade').style.opacity = clamp((t - (DURATION - 0.6)) / 0.6, 0, 1);
+  }
+
+  window.DURATION = DURATION;
+  window.renderFrame = renderFrame;
+  window.fontsReady = Promise.all([
+    document.fonts.load('400 80px Gelasio', 'Aaş'),
+    document.fonts.load('italic 400 80px Gelasio', 'Aaş'),
+    document.fonts.load('400 30px Arimo', 'Aaş'),
+    document.fonts.load('700 30px Arimo', 'Aaş'),
+    document.fonts.load('600 80px "Noto Sans Arabic"', 'مرحبا خوش آمدید'),
+  ]).then(() => document.fonts.ready);
+
+  renderFrame(0);
+
+  // Live playback when the page is opened in a browser (the renderer passes ?render)
+  if (!new URLSearchParams(location.search).has('render')) {
+    const stage = $('stage');
+    const fit = () => { stage.style.transform = `scale(${Math.min(innerWidth / W, innerHeight / H)})`; };
+    fit(); addEventListener('resize', fit);
+    window.fontsReady.then(() => {
+      const t0 = performance.now();
+      const loop = now => { renderFrame(((now - t0) / 1000) % DURATION); requestAnimationFrame(loop); };
+      requestAnimationFrame(loop);
+    });
+  }
+})();
+</script>
+</body>
+</html>

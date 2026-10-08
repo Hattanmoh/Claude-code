@@ -18,6 +18,36 @@ A 23-slide PowerPoint for launching **Language Champion**, AMP-2's peer-to-peer 
 
 ![All 23 slides](docs/img/all-slides.jpg)
 
+## Motion teaser
+
+A 33-second animated teaser for site screens, shift huddles and Teams: **[watch or download the MP4](motion/output/Language_Champion_Teaser.mp4)** (1920 × 1080, 30 fps, 2.5 MB, no sound so it works on muted screens). It loops cleanly, so it can run continuously.
+
+![Teaser key frames](docs/img/teaser-frames.jpg)
+
+| Time | Scene |
+| --- | --- |
+| 0–5 s | Greetings pop up in five languages: "Can you guess the language?", then the answers appear |
+| 5–9 s | A count to 31+ nationalities: "One team. Many voices." |
+| 9–13 s | Title reveal: Language Champion · Learn. Connect. Belong. |
+| 13–18 s | The five languages |
+| 18–22 s | 100 words, 10 sessions, 2 months, and the session roadmap |
+| 22–27 s | "We're looking for 10 Language Champions", with the three benefits |
+| 27–33 s | Apply now: deadline, how to apply, Lucid logo |
+
+To put a scannable QR code on the end card, add the link to `motion/config.json` and re-render:
+
+```json
+{ "registrationUrl": "https://your-form-link", "displayUrl": "short.link/apply" }
+```
+
+```bash
+npm install
+npx playwright install chromium   # one-time browser download for rendering
+npm run motion                    # writes motion/output/Language_Champion_Teaser.mp4 (needs ffmpeg)
+```
+
+You can also open `motion/teaser.html` in any browser to play it live, full screen and looping. The animation is in `motion/teaser.template.html`; the deadline text is in `motion/config.json`.
+
 ## Before you present
 
 Replace the bracketed placeholders:
@@ -59,6 +89,9 @@ Requires Node.js 18 or later.
 assets/        Lucid wordmark in navy (light slides) and white (dark slides)
 content/       Announcement email text, inserted into the speaker notes
 docs/          Design specification and preview images
+motion/        Teaser animation: template, renderer, settings, open-licence fonts and the rendered MP4
 output/        The built PowerPoint
 src/           Deck generator (pptxgenjs) and theme-colour step
 ```
+
+The teaser uses Gelasio, Arimo and Noto Sans Arabic (SIL Open Font License; licences in `motion/fonts/`). Gelasio and Arimo share the character widths of the deck's Georgia and Arial, and bundling them means the video renders the same on any machine.

@@ -1,10 +1,12 @@
 {
   "name": "language-champion-deck",
-  "version": "1.0.0",
-  "description": "Language Champion Program Toolkit: a 23-slide PowerPoint in the AMP-2 Lucid house style, generated with pptxgenjs.",
+  "version": "1.1.0",
+  "description": "Language Champion Program Toolkit: a 23-slide PowerPoint and a 33-second motion teaser in the AMP-2 Lucid house style.",
   "private": true,
   "scripts": {
-    "build": "node src/build.js"
+    "build": "node src/build.js",
+    "motion": "node motion/render.js",
+    "motion:html": "node motion/render.js --html-only"
   },
   "engines": {
     "node": ">=18"
@@ -16,5 +18,9 @@
     "react-dom": "^19.2.0",
     "react-icons": "^5.7.0",
     "sharp": "^0.35.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0",
+    "qrcode": "^1.5.4"
   }
 }
